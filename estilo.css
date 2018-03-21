@@ -1,0 +1,123 @@
+body{
+	background:rgba(211,211,211,0.5);
+	color:#222;
+	font-family: 'EB Garamond', Helvetica, Arial, sans-serif; 
+}
+
+/* un comentario en CSS se escribe de esta manera */
+
+a{color:hsl(0, 60%, 40%); text-decoration:none; color:#439889;}
+
+:hover{transition:  ease-in-out all 0.5s;}
+
+a:hover{color:#afcc3f;}
+
+nav, nav ol{
+	margin:0;
+	background: white;
+	margin-right: 20rem;
+
+}
+
+nav ol li{
+	font-size: 120%;
+	list-style-position:inside;
+	padding: 0.5rem;
+}
+
+div.container{
+	margin:2rem;
+	position: relative;
+}
+
+h2{
+	transform: translate(5px, 40px) rotate(35deg);
+	position:absolute;
+	right:0;
+	top:0;
+	color: #439889;
+	font-family: 'Dancing Script', cursive;
+}
+
+h1 {
+	background-color:#00695c;
+	color: white;
+	margin: 0 20rem 0 0 ;
+	padding-left: 2%;
+    font-family: 'Dancing Script', cursive;
+}
+
+h3{
+	color: #003d33;
+}
+
+@media screen and (max-width: 1024px){
+	h2{display:none;}
+}
+
+@keyframes espaciado {
+	from {letter-spacing: 0.01rem; color:green;}
+	to {letter-spacing: 0.5rem;}
+}
+
+h4{
+     color:#439889;
+}
+
+h4:hover {
+	animation-name: espaciado;
+	animation-duration: 3s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+	color:#afcc3f;
+}
+
+figure{
+	background:rgba(255,255,255,.9);
+	padding:0.5rem;
+	margin:1rem 0 2rem 0;
+	box-shadow: 10px 10px 20px rgba(0,0,0,.1);
+}
+
+figure img{
+	width: 100%;
+	height:auto;
+	filter: sepia(60%);
+
+}
+
+figure img:hover{
+	width: 100%;
+	height:auto;
+	filter: grayscale(0);
+}
+
+figcaption{
+	padding:0.5rem;
+	font-size: 90%;
+	letter-spacing: 0.01rem;
+}
+
+hr{
+	border:3px solid #ddd;
+}
+
+svg{
+	border:30px solid #fff;
+}
+
+s, del{
+	background:#ffffa3; 
+	color:#e3ff71;
+	text-decoration: none;
+}
+
+ins{
+	font-weight: bold;
+	color:#439889;
+	text-decoration: none;
+}
+
+p:first-child{
+	color:green;
+}
